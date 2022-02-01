@@ -1,11 +1,27 @@
-function scuberGreetingForFeet(){
-  // Write your code here!
+function scuberGreetingForFeet(feetTraveled){
+  if (feetTraveled <= 400) {
+    return "This one is on me!";
+  }
+  else if (feetTraveled > 2000 && feetTraveled < 2500) {
+    return "I will gladly take your thirty bucks.";
+  }
+  else if (feetTraveled > 2500) {
+    return "No can do.";
+  }
 }
 
-function ternaryCheckCity(){
-  // Write your code here!
+function ternaryCheckCity(city){
+  return city === 'NYC'?'Ok, sounds good.':'No go.'; 
 }
 
-function switchOnCharmFromTip(){
-  // Write your code here!
+function switchOnCharmFromTip(tip){
+  if (tip === 'generous') {
+    return "Thank you so much."; 
+  }
+  else if (tip === 'not as generous') {
+    return "Thank you.";
+  }
+  else {
+    return "Bye.";
+  }
 }
